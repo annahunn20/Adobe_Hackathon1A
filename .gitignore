@@ -48,8 +48,9 @@ Thumbs.db
 *.log
 
 # Project specific
-*.pdf
-*.json
+test_input/
+test_output/
+*.json  # Ignore JSON files in output directory
 
 # Temporary files
 *.tmp
