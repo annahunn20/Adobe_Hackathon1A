@@ -48,10 +48,6 @@ Thumbs.db
 *.log
 
 # Project specific
-input/
-output/
-test_input/
-test_output/
 *.pdf
 *.json
 
