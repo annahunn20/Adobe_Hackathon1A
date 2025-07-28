@@ -75,11 +75,10 @@ README.md             # Documentation
 docker build --platform linux/amd64 -t pdf-extractor:v1.0 .
 
 # Run with mounted volumes
-docker run --rm \
-  -v $(pwd)/input:/app/input \
-  -v $(pwd)/output:/app/output \
-  --network none \
-  pdf-extractor:v1.0
+$inputPath = (Resolve-Path .\input).Path
+$outputPath = (Resolve-Path .\output).Path
+
+docker run --rm -v "${inputPath}:/app/input:ro" -v "${outputPath}:/app/output" pdf-ml-processor
 ```
 
 ### Local Development

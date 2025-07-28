@@ -1,0 +1,528 @@
+%% Overview  Foundation Level Extensions  
+graph TD
+    n0["Foundation Level Extensions"]
+    n1["Version 10"]
+    n0 --> n1
+    n2["International Software Testing Qualifications Board"]
+    n0 --> n2
+    n3["Copyright Notice"]
+    n2 --> n3
+    n4["This document may be copied in its entirety, or extracts made, if the source is acknowledged"]
+    n2 --> n4
+    n5["Software Testing"]
+    n2 --> n5
+    n6["Foundation Level Extension – Agile Tester"]
+    n2 --> n6
+    n7["Copyright © International Software Testing Qualifications Board (hereinafter called ISTQB®)"]
+    n2 --> n7
+    n8["Version 2014"]
+    n2 --> n8
+    n9["Page 2 of 12"]
+    n2 --> n9
+    n10["May 31, 2014"]
+    n2 --> n10
+    n11["© International Software Testing Qualifications Board"]
+    n2 --> n11
+    n12["Qualifications Board"]
+    n2 --> n12
+    n13["Software Testing"]
+    n2 --> n13
+    n14["Foundation Level Extension – Agile Tester"]
+    n2 --> n14
+    n15["Revision History"]
+    n2 --> n15
+    n16["18 JUNE 2013"]
+    n15 --> n16
+    n17["Initial version"]
+    n15 --> n17
+    n18["23 JULY 2013"]
+    n15 --> n18
+    n19["WG reviewed and confirmed"]
+    n15 --> n19
+    n20["6 NOV 2013"]
+    n15 --> n20
+    n21["amended population and diagram"]
+    n15 --> n21
+    n22["11 DEC 2013"]
+    n15 --> n22
+    n23["Amended Business Outcomes and Chapters matching"]
+    n15 --> n23
+    n24["20 DEC 2013"]
+    n15 --> n24
+    n25["Working group updates on 07"]
+    n15 --> n25
+    n26["31 MAY 2014"]
+    n15 --> n26
+    n27["GA release for Agile Extension"]
+    n15 --> n27
+    n28["Version 2014"]
+    n15 --> n28
+    n29["Page 3 of 12"]
+    n15 --> n29
+    n30["May 31, 2014"]
+    n15 --> n30
+    n31["© International Software Testing Qualifications Board"]
+    n15 --> n31
+    n32["Software Testing"]
+    n15 --> n32
+    n33["Foundation Level Extension – Agile Tester"]
+    n15 --> n33
+    n34["Table of Contents"]
+    n2 --> n34
+    n35["Revision History"]
+    n34 --> n35
+    n36["Introduction to the Foundation Level Extensions"]
+    n34 --> n36
+    n37["Introduction to Foundation Level Agile Tester Extension"]
+    n34 --> n37
+    n38["Intended Audience"]
+    n34 --> n38
+    n39["Career Paths for Testers"]
+    n34 --> n39
+    n40["Learning Objectives"]
+    n34 --> n40
+    n41["Entry Requirements"]
+    n34 --> n41
+    n42["Structure and Course Duration"]
+    n34 --> n42
+    n43["Keeping It Current"]
+    n34 --> n43
+    n44["Overview of the Foundation Level Extension – Agile Tester Syllabus"]
+    n34 --> n44
+    n45["Business Outcomes"]
+    n34 --> n45
+    n46["Documents and Web Sites"]
+    n34 --> n46
+    n47["Version 2014"]
+    n34 --> n47
+    n48["Page 4 of 12"]
+    n34 --> n48
+    n49["May 31, 2014"]
+    n34 --> n49
+    n50["© International Software Testing Qualifications Board"]
+    n34 --> n50
+    n51["Software Testing"]
+    n34 --> n51
+    n52["Foundation Level Extension – Agile Tester"]
+    n34 --> n52
+    n53["This document was produced by a team from the International Software Testing Qualifications Board"]
+    n34 --> n53
+    n54["Foundation Level Working Group"]
+    n34 --> n54
+    n55["The Agile Extension team thanks the review team and the National Boards for their suggestions and input"]
+    n34 --> n55
+    n56["At the time the Foundation Level Agile Extension Syllabus was completed, the Agile Extension Working"]
+    n34 --> n56
+    n57["Group had the following membership: Rex Black (Chair), Bertrand Cornanguer (Vice Chair), Gerry"]
+    n34 --> n57
+    n58["Coleman (Learning Objectives Lead), Debra Friedenberg (Exam Lead), Alon Linetzki (Business Outcomes"]
+    n34 --> n58
+    n59["and Marketing Lead), Tauhida Parveen (Editor), and Leo van der Aalst (Development Lead)"]
+    n34 --> n59
+    n60["Authors: Rex Black, Anders Claesson, Gerry Coleman, Bertrand Cornanguer, Istvan Forgacs, Alon"]
+    n34 --> n60
+    n61["Linetzki, Tilo Linz, Leo van der Aalst, Marie Walsh, and Stephan Weber"]
+    n34 --> n61
+    n62["Internal Reviewers: Mette Bruhn-Pedersen, Christopher Clements, Alessandro Collino, Debra"]
+    n34 --> n62
+    n63["Friedenberg, Kari Kakkonen, Beata Karpinska, Sammy Kolluru, Jennifer Leger, Thomas Mueller, Tuula"]
+    n34 --> n63
+    n64["Pääkkönen, Meile Posthuma, Gabor Puhalla, Lloyd Roden, Marko Rytkönen, Monika Stoecklein-Olsen,"]
+    n34 --> n64
+    n65["Robert Treffny, Chris Van Bael, and Erik van Veenendaal"]
+    n34 --> n65
+    n66["The team thanks also the following persons, from the National Boards and the Agile expert community,"]
+    n34 --> n66
+    n67["who participated in reviewing, commenting, and balloting of the Foundation Agile Extension Syllabus: Dani"]
+    n34 --> n67
+    n68["Almog, Richard Berns, Stephen Bird, Monika Bögge, Afeng Chai, Josephine Crawford, Tibor Csöndes,"]
+    n34 --> n68
+    n69["Huba Demeter, Arnaud Foucal, Cyril Fumery, Kobi Halperin, Inga Hansen, Hanne Hinz, Jidong Hu, Phill"]
+    n34 --> n69
+    n70["Isles, Shirley Itah, Martin Klonk, Kjell Lauren, Igal Levi, Rik Marselis, Johan Meivert, Armin Metzger, Peter"]
+    n34 --> n70
+    n71["Morgan, Ninna Morin, Ingvar Nordstrom, Chris O’Dea, Klaus Olsen, Ismo Paukamainen, Nathalie Phung,"]
+    n34 --> n71
+    n72["Helmut Pichler, Salvatore Reale, Stuart Reid, Hans Rombouts, Petri Säilynoja, Soile Sainio, Lars-Erik"]
+    n34 --> n72
+    n73["Sandberg, Dakar Shalom, Jian Shen, Marco Sogliani, Lucjan Stapp, Yaron Tsubery, Sabine Uhde,"]
+    n34 --> n73
+    n74["Stephanie Ulrich, Tommi Välimäki, Jurian Van de Laar, Marnix Van den Ent, António Vieira Melo, Wenye"]
+    n34 --> n74
+    n75["Xu, Ester Zabar, Wenqiang Zheng, Peter Zimmerer, Stevan Zivanovic, and Terry Zuo"]
+    n34 --> n75
+    n76["This document was formally approved for release by the General Assembly of the ISTQB® on May 31,"]
+    n34 --> n76
+    n77["2014"]
+    n78["Version 2014"]
+    n77 --> n78
+    n79["Page 5 of 12"]
+    n77 --> n79
+    n80["May 31, 2014"]
+    n77 --> n80
+    n81["© International Software Testing Qualifications Board"]
+    n77 --> n81
+    n82["Qualifications Board"]
+    n77 --> n82
+    n83["Software Testing"]
+    n77 --> n83
+    n84["Foundation Level Extension – Agile Tester"]
+    n77 --> n84
+    n85["1 Introduction to the Foundation Level Extensions"]
+    n86["This overview document is intended for anyone with an interest in the ISTQB Foundation Level"]
+    n85 --> n86
+    n87["Extensions who wants a high-level introduction to the leading principles and an overview of the individual"]
+    n85 --> n87
+    n88["extension syllabi"]
+    n85 --> n88
+    n89["From time to time, ISTQB will update this document to reflect any additional extensions that shall be"]
+    n85 --> n89
+    n90["introduced for the Foundation Level, or to reflect major changes in existing ones Publications of the"]
+    n85 --> n90
+    n91["updated document will be available on the ISTQB website"]
+    n85 --> n91
+    n92["The ISTQB Foundation and Advanced Level syllabi have been defined and have been on the market for"]
+    n85 --> n92
+    n93["some time New topics emerge due to technology and methodology changes in the market which often"]
+    n85 --> n93
+    n94["are brought into the ISTQB program as new Expert Level syllabi However, not all topics are suited for the"]
+    n85 --> n94
+    n95["Expert Level For this reason, the extension syllabi are established at the Foundation Level to expand the"]
+    n85 --> n95
+    n96["ISTQB program to incorporate new or updated knowledge New extensions shall be discussed and"]
+    n85 --> n96
+    n97["introduced by the ISTQB periodically Extensions may be established at the Advanced Level as well, but"]
+    n85 --> n97
+    n98["that is beyond the scope of this document"]
+    n85 --> n98
+    n99["The following Foundation Level Extension syllabus has been released:"]
+    n85 --> n99
+    n100["Agile Tester"]
+    n85 --> n100
+    n101["In this document, each Foundation Level Extension syllabus is summarized and the associated Business"]
+    n85 --> n101
+    n102["Outcomes are stated The Business Outcomes communicate what can be expected from a person who"]
+    n85 --> n102
+    n103["achieves a Foundation Level Extension Certification in a particular subject area (eg, Agile Tester), and"]
+    n85 --> n103
+    n104["will outline the benefits for companies that are considering the development of specific testing skills at this"]
+    n85 --> n104
+    n105["Version 2014"]
+    n85 --> n105
+    n106["Page 6 of 12"]
+    n85 --> n106
+    n107["May 31, 2014"]
+    n85 --> n107
+    n108["© International Software Testing Qualifications Board"]
+    n85 --> n108
+    n109["Qualifications Board"]
+    n85 --> n109
+    n110["Software Testing"]
+    n85 --> n110
+    n111["Foundation Level Extension – Agile Tester"]
+    n85 --> n111
+    n112["2 Introduction to Foundation Level Agile Tester Extension"]
+    n113["The certification for Foundation Level Extension – Agile Tester is designed for professionals who are"]
+    n112 --> n113
+    n114["working within Agile environments It is also for professionals who are planning to start implementing"]
+    n112 --> n114
+    n115["Agile methods in the near future, or are working within companies that plan to do so, The certification"]
+    n112 --> n115
+    n116["provides an advantage for those who would like to know the required Agile activities, roles, methods, and"]
+    n112 --> n116
+    n117["methodologies specific to their role"]
+    n112 --> n117
+    n118["21 Intended Audience"]
+    n112 --> n118
+    n119["The Foundation Level Extension – Agile Tester qualification is aimed at four main groups of professionals:"]
+    n118 --> n119
+    n120["1 Professionals who have achieved in-depth testing experience in traditional methods and would"]
+    n121["like to get an Agile Tester Certificate"]
+    n120 --> n121
+    n122["2 Junior professional testers who are just starting in the testing profession, have received the"]
+    n123["Foundation Level certificate, and would like to know more about the tester’s role in an Agile"]
+    n122 --> n123
+    n124["3 Professionals who are relatively new to testing and are required to implement test approaches,"]
+    n125["methods and techniques in their day to day job in Agile projects"]
+    n124 --> n125
+    n126["4 Professionals who are experienced in their role (including unit testing) and need more"]
+    n127["understanding and knowledge about how to perform and manage testing on all levels in Agile"]
+    n126 --> n127
+    n128["These professionals include people who are in roles such as testers, test analysts, test engineers, test"]
+    n126 --> n128
+    n129["consultants, test managers, user acceptance testers, and software developers"]
+    n126 --> n129
+    n130["This Foundation Level Extension – Agile Tester certification may also be appropriate for anyone who"]
+    n126 --> n130
+    n131["wants a deeper understanding of software testing in the Agile world, such as project managers, quality"]
+    n126 --> n131
+    n132["managers, software development managers, business analysts, IT directors, and management"]
+    n126 --> n132
+    n133["22 Career Paths for Testers"]
+    n126 --> n133
+    n134["Building on the Foundation Level, the Agile Tester Extension supports the definition of career paths for"]
+    n133 --> n134
+    n135["professional testers A person with the Agile Tester certificate has extended the broad understanding of"]
+    n133 --> n135
+    n136["testing acquired at the Foundation Level to enable him or her to work effectively as a professional tester in"]
+    n133 --> n136
+    n137["an Agile project"]
+    n133 --> n137
+    n138["People possessing an ISTQB Foundation Level Extension – Agile Tester certificate may use the Certified"]
+    n133 --> n138
+    n139["Tester Foundation Level acronym CTFL-AT"]
+    n133 --> n139
+    n140["23 Learning Objectives"]
+    n126 --> n140
+    n141["In general, the Foundation Level syllabus is examinable at a K1 level, ie, the candidate will recognize,"]
+    n140 --> n141
+    n142["remember and recall terms and concepts stated in the Foundation Level syllabus"]
+    n140 --> n142
+    n143["In addition, all Foundation Level syllabus learning objectives are examinable at the same K- level in an"]
+    n140 --> n143
+    n144["extension exam"]
+    n140 --> n144
+    n145["Version 2014"]
+    n140 --> n145
+    n146["Page 7 of 12"]
+    n140 --> n146
+    n147["May 31, 2014"]
+    n140 --> n147
+    n148["© International Software Testing Qualifications Board"]
+    n140 --> n148
+    n149["Qualifications Board"]
+    n140 --> n149
+    n150["Software Testing"]
+    n140 --> n150
+    n151["Foundation Level Extension – Agile Tester"]
+    n140 --> n151
+    n152["That said, each extension level exam focuses on the learning objectives defined in that extension"]
+    n140 --> n152
+    n153["syllabus The relevant learning objectives at K1, K2, and K3 levels are provided at the beginning of each"]
+    n140 --> n153
+    n154["chapter within each particular extension syllabus"]
+    n140 --> n154
+    n155["24 Entry Requirements"]
+    n126 --> n155
+    n156["To be able to participate in a Foundation Level Extension – Agile Tester exam, candidates must have"]
+    n155 --> n156
+    n157["obtained the ISTQB Foundation Level certificate"]
+    n155 --> n157
+    n158["25 Structure and Course Duration"]
+    n126 --> n158
+    n159["The Foundation Level Extension – Agile Tester syllabus has no shared or common elements with the"]
+    n158 --> n159
+    n160["Foundation Level syllabus"]
+    n158 --> n160
+    n161["The syllabi must be taught in the following minimum number of days:"]
+    n158 --> n161
+    n162["Baseline: Foundation"]
+    n158 --> n162
+    n163["Extension: Agile Tester"]
+    n158 --> n163
+    n164["The following figure shows the structure of the Agile Tester Extension and its relationship to the"]
+    n158 --> n164
+    n165["Foundation Level"]
+    n158 --> n165
+    n166["Version 2014"]
+    n158 --> n166
+    n167["Page 8 of 12"]
+    n158 --> n167
+    n168["May 31, 2014"]
+    n158 --> n168
+    n169["© International Software Testing Qualifications Board"]
+    n158 --> n169
+    n170["Qualifications Board"]
+    n158 --> n170
+    n171["Software Testing"]
+    n158 --> n171
+    n172["Foundation Level Extension – Agile Tester"]
+    n158 --> n172
+    n173["26 Keeping It Current"]
+    n126 --> n173
+    n174["The software industry changes rapidly To deal with these changes and to provide the stakeholders with"]
+    n173 --> n174
+    n175["access to relevant and current information, the ISTQB working groups have created links on the"]
+    n173 --> n175
+    n176["wwwistqborg web site which refer to supporting documents, changes to standards and new occurrences"]
+    n173 --> n176
+    n177["in the industry This information is not examinable under this syllabus"]
+    n173 --> n177
+    n178["Version 2014"]
+    n173 --> n178
+    n179["Page 9 of 12"]
+    n173 --> n179
+    n180["May 31, 2014"]
+    n173 --> n180
+    n181["© International Software Testing Qualifications Board"]
+    n173 --> n181
+    n182["Qualifications Board"]
+    n173 --> n182
+    n183["Software Testing"]
+    n173 --> n183
+    n184["Foundation Level Extension – Agile Tester"]
+    n173 --> n184
+    n185["3 Overview of the Foundation Level Extension – Agile Tester"]
+    n186["31 Business Outcomes"]
+    n185 --> n186
+    n187["This section lists the Business Outcomes expected of a candidate who has achieved the Foundation Level"]
+    n186 --> n187
+    n188["Extension – Agile Tester certification"]
+    n186 --> n188
+    n189["An Agile Tester can…"]
+    n186 --> n189
+    n190["Collaborate in a cross-functional Agile team being familiar with principles and basic"]
+    n186 --> n190
+    n191["practices of Agile software development"]
+    n186 --> n191
+    n192["Adapt existing testing experience and knowledge to Agile values and principles"]
+    n186 --> n192
+    n193["Support the Agile team in planning test-related activities"]
+    n186 --> n193
+    n194["Apply relevant methods and techniques for testing in an Agile project"]
+    n186 --> n194
+    n195["Assist the Agile team in test automation activities"]
+    n186 --> n195
+    n196["Assist business stakeholders in defining understandable and testable user stories,"]
+    n186 --> n196
+    n197["scenarios, requirements and acceptance criteria as appropriate"]
+    n186 --> n197
+    n198["Work and share information with other team members using effective communication"]
+    n186 --> n198
+    n199["styles and channels"]
+    n186 --> n199
+    n200["In general, a Certified Tester Foundation Level – Agile Tester is expected to have acquired the necessary"]
+    n186 --> n200
+    n201["skills to working effectively within an Agile team and environment"]
+    n186 --> n201
+    n202["32 Content"]
+    n185 --> n202
+    n203["Chapter 1: Agile Software Development"]
+    n202 --> n203
+    n204["The tester should remember the basic concept of Agile software development based on the Agile"]
+    n202 --> n204
+    n205["The tester should understand the advantages of the whole-team approach and the benefits of"]
+    n202 --> n205
+    n206["early and frequent feedback"]
+    n202 --> n206
+    n207["The tester should recall Agile software development approaches"]
+    n202 --> n207
+    n208["The tester should be able to write testable user stories in collaboration with developers and"]
+    n202 --> n208
+    n209["business representatives"]
+    n202 --> n209
+    n210["The tester should understand how retrospectives can be used as a mechanism for process"]
+    n202 --> n210
+    n211["improvement in Agile projects"]
+    n202 --> n211
+    n212["The tester should understand the use and purpose of continuous integration"]
+    n202 --> n212
+    n213["The tester should know the differences between iteration and release planning, and how a tester"]
+    n202 --> n213
+    n214["adds value in each of these activities"]
+    n202 --> n214
+    n215["Version 2014"]
+    n202 --> n215
+    n216["Page 10 of 12"]
+    n202 --> n216
+    n217["May 31, 2014"]
+    n202 --> n217
+    n218["© International Software Testing Qualifications Board"]
+    n202 --> n218
+    n219["Software Testing"]
+    n202 --> n219
+    n220["Foundation Level Extension – Agile Tester"]
+    n202 --> n220
+    n221["Chapter 2: Fundamental Agile Testing Principles, Practices, and Processes"]
+    n202 --> n221
+    n222["The tester should be able to describe the differences between testing activities in Agile projects"]
+    n202 --> n222
+    n223["and non-Agile projects"]
+    n202 --> n223
+    n224["The tester should be able to describe how development and testing activities are integrated in"]
+    n202 --> n224
+    n225["Agile projects"]
+    n202 --> n225
+    n226["The tester should be able to describe the role of independent testing in Agile projects"]
+    n202 --> n226
+    n227["The tester should be able to describe the tools and techniques used to communicate the status of"]
+    n202 --> n227
+    n228["testing in an Agile project, including test progress and product quality"]
+    n202 --> n228
+    n229["The tester should be able to describe the process of evolving tests across multiple iterations and"]
+    n202 --> n229
+    n230["explain why test automation is important to manage regression risk in Agile projects"]
+    n202 --> n230
+    n231["The tester should understand the skills (people, domain, and testing) of a tester in an Agile team"]
+    n202 --> n231
+    n232["The tester should be able to understand the role of a tester within an Agile team"]
+    n202 --> n232
+    n233["Chapter 3: Agile Testing Methods, Techniques, and Tools"]
+    n202 --> n233
+    n234["The tester should be able to recall the concepts of test-driven development, acceptance test-"]
+    n202 --> n234
+    n235["driven development, and behavior-driven development"]
+    n202 --> n235
+    n236["The tester should be able to recall the concepts of the test pyramid"]
+    n202 --> n236
+    n237["The tester should be able to summarize the testing quadrants and their relationships with testing"]
+    n202 --> n237
+    n238["levels and testing types"]
+    n202 --> n238
+    n239["For a given Agile project, the tester should be able to work as a tester in a Scrum team"]
+    n202 --> n239
+    n240["The tester should be able to assess quality risks within an Agile project"]
+    n202 --> n240
+    n241["The tester should be able to estimate testing effort based on iteration content and quality risks"]
+    n202 --> n241
+    n242["The tester should be able to interpret relevant information to support testing activities"]
+    n202 --> n242
+    n243["The tester should be able to explain to business stakeholders how to define testable acceptance"]
+    n202 --> n243
+    n244["Given a user story, the tester should be able to write acceptance test-driven development test"]
+    n202 --> n244
+    n245["For both functional and non-functional behavior, the tester should be able to write test cases using"]
+    n202 --> n245
+    n246["black box test design techniques based on given user stories"]
+    n202 --> n246
+    n247["The tester should be able to perform exploratory testing to support the testing of an Agile project"]
+    n202 --> n247
+    n248["The tester should be able to recall different tools available to testers according to their purpose"]
+    n202 --> n248
+    n249["and to activities in Agile projects"]
+    n202 --> n249
+    n250["Version 2014"]
+    n202 --> n250
+    n251["Page 11 of 12"]
+    n202 --> n251
+    n252["May 31, 2014"]
+    n202 --> n252
+    n253["© International Software Testing Qualifications Board"]
+    n202 --> n253
+    n254["Qualifications Board"]
+    n202 --> n254
+    n255["Software Testing"]
+    n202 --> n255
+    n256["Foundation Level Extension – Agile Tester"]
+    n202 --> n256
+    n257["4 References"]
+    n258["41 Trademarks"]
+    n257 --> n258
+    n259["The following registered trademarks and service marks are used in this document:"]
+    n258 --> n259
+    n260["ISTQB ® is a registered trademark of the International Software Testing Qualifications Board"]
+    n258 --> n260
+    n261["42 Documents and Web Sites"]
+    n257 --> n261
+    n262["Web site of the International Software Testing Qualifications Board Refer"]
+    n261 --> n262
+    n263["to this website for the latest ISTQB Glossary and Syllabi (wwwistqborg)"]
+    n261 --> n263
+    n264["Version 2014"]
+    n261 --> n264
+    n265["Page 12 of 12"]
+    n261 --> n265
+    n266["May 31, 2014"]
+    n261 --> n266
+    n267["© International Software Testing Qualifications Board"]
+    n261 --> n267
