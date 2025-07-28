@@ -36,6 +36,58 @@ def extract_title(text_by_page):
             return cleaned_line
     return ""
 
+def extract_summary(text_by_page):
+    """Extract a short summary from the PDF content."""
+    if not text_by_page:
+        return "No content available to summarize."
+    
+    # Keywords indicating important content
+    key_phrases = ["purpose", "overview", "goal", "objective", "summary", "introduction"]
+    summary_sentences = []
+    max_words = 100
+    word_count = 0
+
+    # Check first page for summary content
+    first_page_text = text_by_page[0]["text"]
+    lines = first_page_text.split('\n')[:10]  # Limit to first 10 lines
+    for line in lines:
+        cleaned_line = clean_text(line)
+        if not cleaned_line or "TOPJUMP" in cleaned_line.upper():
+            continue
+        # Prioritize lines with key phrases
+        if any(phrase in cleaned_line.lower() for phrase in key_phrases):
+            summary_sentences.append(cleaned_line)
+            word_count += len(cleaned_line.split())
+        elif len(summary_sentences) < 2:  # Add first few lines if no key phrases
+            summary_sentences.append(cleaned_line)
+            word_count += len(cleaned_line.split())
+        if word_count >= max_words:
+            break
+    
+    # If no summary found, use first non-empty line
+    if not summary_sentences:
+        for page in text_by_page:
+            lines = page["text"].split('\n')
+            for line in lines:
+                cleaned_line = clean_text(line)
+                if cleaned_line and "TOPJUMP" not in cleaned_line.upper():
+                    summary_sentences.append(cleaned_line)
+                    break
+            if summary_sentences:
+                break
+    
+    # Combine sentences and truncate
+    summary = " ".join(summary_sentences).strip()
+    if not summary:
+        return "No meaningful content found for summary."
+    
+    # Truncate to 100 words
+    words = summary.split()
+    if len(words) > max_words:
+        summary = " ".join(words[:max_words]) + "..."
+    
+    return summary
+
 def extract_outline(text_by_page):
     """Extract outline with H1-H4 levels based on numbering and formatting."""
     outline = []

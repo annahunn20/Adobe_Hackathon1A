@@ -3,7 +3,7 @@ from pathlib2 import Path
 import utils
 
 def process_pdf(pdf_path, output_dir, verbose=False):
-    """Process a single PDF and save the outline to a JSON file."""
+    """Process a single PDF and save the outline and summary to a JSON file."""
     if verbose:
         print(f"Processing {pdf_path}")
     text_by_page = utils.extract_text_from_pdf(pdf_path)
@@ -12,9 +12,11 @@ def process_pdf(pdf_path, output_dir, verbose=False):
         return False
     title = utils.extract_title(text_by_page)
     outline = utils.extract_outline(text_by_page)
+    summary = utils.extract_summary(text_by_page)
     output_data = {
         "title": title,
-        "outline": outline
+        "outline": outline,
+        "summary": summary
     }
     output_filename = output_dir / f"{pdf_path.stem}.json"
     if utils.save_to_json(output_data, output_filename):
@@ -24,7 +26,7 @@ def process_pdf(pdf_path, output_dir, verbose=False):
     return False
 
 def main():
-    parser = argparse.ArgumentParser(description="Extract PDF outlines to JSON")
+    parser = argparse.ArgumentParser(description="Extract PDF outlines and summaries to JSON")
     parser.add_argument("--input", type=str, required=True, help="Input directory containing PDFs")
     parser.add_argument("--output", type=str, required=True, help="Output directory for JSON files")
     parser.add_argument("--verbose", action="store_true", help="Enable verbose output")
