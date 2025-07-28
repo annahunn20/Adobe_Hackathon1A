@@ -126,11 +126,11 @@ python main.py --input ./input --output ./output
 
 ## Constraints Compliance
 
-- ✅ **Execution time**: < 10 seconds for 50-page PDFs
-- ✅ **Model size**: No models used, only lightweight libraries
-- ✅ **Network**: Fully offline, no internet calls
-- ✅ **Runtime**: CPU-only on AMD64 architecture
-- ✅ **Memory**: Optimized for 16GB RAM systems
+-  **Execution time**: < 10 seconds for 50-page PDFs
+-  **Model size**: No models used, only lightweight libraries
+-  **Network**: Fully offline, no internet calls
+-  **Runtime**: CPU-only on AMD64 architecture
+-  **Memory**: Optimized for 16GB RAM systems
 
 ## Testing
 
